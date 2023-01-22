@@ -15,9 +15,9 @@ function onFormSubmit(e) {
   e.target.reset();
   localStorage.removeItem(STORAGE_KEY);
   console.log(formData);
-  setTimeout(() => {
-    document.location.reload();
-  }, 3000);
+  //   setTimeout(() => {
+  //     document.location.reload();
+  //   }, 3000);
 }
 
 form.addEventListener('input', throttle(addLocalStorage, 500));
