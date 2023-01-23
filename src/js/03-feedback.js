@@ -30,8 +30,8 @@ function addLocalStorage(e) {
 function fillInput() {
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (savedData) {
-    emailInput.value = JSON.parse(savedData).email;
-    messageInput.value = JSON.parse(savedData).message;
+    emailInput.value = JSON.parse(savedData).email || '';
+    messageInput.value = JSON.parse(savedData).message || '';
   }
 }
 fillInput();
